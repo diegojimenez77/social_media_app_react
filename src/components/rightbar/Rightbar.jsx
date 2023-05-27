@@ -67,6 +67,22 @@ export default function Rightbar({profile}) {
           <img src="/assets/person/6.jpeg" alt="" className="rightbarFollowingImg" />
           <span className="rightbarFollowingName">Laura Carter</span>
         </div>
+        <div className="rightbarFollowing">
+          <img src="/assets/person/7.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Laura Carter</span>
+        </div>
+        <div className="rightbarFollowing">
+          <img src="/assets/person/8.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Laura Carter</span>
+        </div>
+        <div className="rightbarFollowing">
+          <img src="/assets/person/9.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Laura Carter</span>
+        </div>
+        <div className="rightbarFollowing">
+          <img src="/assets/person/10.jpeg" alt="" className="rightbarFollowingImg" />
+          <span className="rightbarFollowingName">Laura Carter</span>
+        </div>
       </div>
       </>
       );
@@ -74,8 +90,7 @@ export default function Rightbar({profile}) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        <ProfileRightbar />
-        <HomeRightbar />
+        {profile ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
       </div>
   );
